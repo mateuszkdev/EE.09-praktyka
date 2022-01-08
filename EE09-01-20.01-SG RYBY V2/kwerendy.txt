@@ -1,0 +1,7 @@
+SELECT id, nazwa, wystepowanie FROM ryby WHERE styl_zycia = 2;
+
+SELECT akwen, wojewodztwo FROM lowisko WHERE rodzaj = 2 || rodzaj = 3;
+
+SELECT nazwa FROM ryby, okres_ochronny WHERE ryby.id = okres_ochronny.Ryby_id AND okres_ochronny.wymiary_ochronny = 0;
+
+CREATEA TABLE wedkarze (id int(10) NOT NULL AUTO_INCREMENT, imie text NOT NULL, nazwisko text NOT NULL, punkty int(10) NOT NULL, PRIMARY KEY(id));
