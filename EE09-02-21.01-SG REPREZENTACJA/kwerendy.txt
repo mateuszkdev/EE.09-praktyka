@@ -1,0 +1,7 @@
+SELECT imie, nazwisko FROM zawodnik WHERE pozycja_id = 4;
+
+SELECT zespol, punkty, grupa FROM liga ORDER BY punkty DESC;
+
+SELECT zawodnik.id as "id", zawodnik.nazwisko as "nazwisko", pozycja.nazwa as "nazwa" FROM zawodnik, pozycja WHERE pozycja.id = 3 || pozycja.id = 4;
+
+DELETE FROM rozgrywka;
