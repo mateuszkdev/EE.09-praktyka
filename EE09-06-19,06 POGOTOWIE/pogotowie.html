@@ -1,0 +1,79 @@
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./styl5.css">
+        <title> Pogotowie Ratunkowe </title>
+
+    </head>
+    
+    <body>
+
+        <section id="banner1" class="banner">
+            
+            <img src="./obraz.jpg" alt="pogotowie">
+
+        </section>
+
+        <section id="banner2" class="banner">
+
+            <h1> Pogotowie <br> Ratunkowe </h1>
+
+        </section>
+
+        <section id="banner3" class="banner">
+
+            <p> Kontakt: <br> 022 222 111 333 </p>
+
+        </section>
+
+        <main>
+
+            <h2> Dodaj nowe zgłoszenie </h2>
+        
+            <form method="POST" action="zgloszenie.php">
+
+                Numer zespołu ratunkowego <br>
+                <input type="number" name="nrZesolu"> <br>
+                
+                Numer dyspozytora: <br>
+                <input type="number" name="nrDyspozytora"> <br>
+
+                Adres: <br>
+                <input type="text" name="adres" size="100"> <br>
+
+                <input type="reset" value="WYCZYŚĆ">
+                <input type="submit" value="ZGŁOŚ">
+
+            </form>
+
+        </main>
+
+        <section id="stopka1" class="stopka">
+
+            <h4> Numery alarmowe </h4>
+            <ul>
+
+                <li> 999 </li>
+                <li> 112 </li>
+
+            </ul>
+
+        </section>
+
+        <section id="stopka2" class="stopka">
+
+            <a href="./kwerendy.txt" download> Pobierz kwerendy </a>
+
+        </section>
+
+        <section id="stopka3" class="stopka">
+
+            <p> Autor <br> 00000000000 (Mateusz#4711) </p>
+
+        </section>
+
+    </body>
+
+</html>
