@@ -1,0 +1,103 @@
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title> Usługi fryzjerskie </title>
+        <link rel="stylesheet" href="./styl2.css">
+
+    </head>
+
+    <body>
+
+        <section id="lewy1">
+
+            <h2> <a href="./index.html"> SALON FRYZJERSKI </a> </h2>
+            <img src="./obraz2.jpg" alt="Czesanie" id="dwa">
+
+        </section>
+
+        <section id="prawy1">
+
+            <h2> MENU </h2>
+
+        </section>
+        
+        <section id="prawy2">
+
+            <ol>
+
+                <li> <a href="./fryzura.html"> Strzyżenie </a> </li>
+                <ul>
+
+                    <li> krótkie </li>
+                    <li> średnie </li>
+                    <li> półdługie </li>
+                    <li> długie </li> 
+
+                </ul>
+                <li> Czesanie </li>
+                <li> Koloryzacja </li>
+
+            </ol>
+
+        </section>
+
+        <section id="lewy2">
+
+            <h3> Dziś promocja na strzyżenie włsów </h3>
+
+            <input type="radio" name="wybor" id="krotkie"> Krótkie <br>
+            <input type="radio" name="wybor" id="srednie"> Średnie <br>
+            <input type="radio" name="wybor" id="poldlugie"> Półdługie <br>
+            <input type="radio" name="wybor" id="dlugie"> Długie <br>
+            
+            <button onclick="sprawdz();"> Odkryj promocję </button>
+
+            <p id="wynik"></p>
+
+            <script type="text/javascript">
+
+                const sprawdz = () => {
+
+                    const data = {
+
+                        krotkie: 25,
+                        srednie: 30,
+                        poldlugie: 40,
+                        dlugie: 50,
+
+                        wynik: 0
+
+                    };
+
+                    const elements = document.getElementsByName('wybor');
+
+                    elements.forEach(e => {
+                        const id = e.id;
+                        if (document.getElementById(id).checked) data.wynik = data[e.id];
+                    });
+
+                    document.getElementById('wynik').innerHTML = `Cena strzyżenia: ${data.wynik}`
+
+                }
+
+            </script>
+
+        </section>
+
+        <section id="prawy3">
+
+            <img src="./obraz1.jpg" alt="Fryzjer">
+
+        </section>
+
+        <footer>
+
+            <p> Autor: 00000000000 (Mateusz#4711) </p>
+
+        </footer>
+
+    </body>
+
+</html>

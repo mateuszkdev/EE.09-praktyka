@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT imie, nazwisko FROM kadra WHERE stanowisko = 'fryzjer';
+Zapytanie 2: SELECT COUNT(*) FROM uslugi WHERE rodzaj = 2;
+Zapytanie 3: CREATE USER 'fryzjer' IDENTIFIED BY 'Fryz12';
+Zapytanie 4: GRANT CREATE, UPDATE, SELECT ON egzamin.kadra TO 'fryzjer';
