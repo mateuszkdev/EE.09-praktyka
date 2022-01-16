@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+}
+
+/* prawidłowa treść ponizej, margin: 0 wizalie sobie usunalem  */
+
+body {
+
+    font-family: Arial;
+
+}
+
+#baner1 {
+
+    background-color: #483D8B;
+    height: 150px;
+    width: 30%;
+    float: left;
+
+}
+
+#baner2 {
+
+    background-color: #483D8B;
+    color: white;
+    height: 150px;
+    width: 70%;
+    float: left;
+
+}
+
+.card {
+
+    background-color: #AFEEEE;
+    width: 150px;
+    height: 100px;
+    margin: 3px;
+    border: 1px solid;
+    float: left;
+
+}
+
+footer {
+
+    background-color: #483D8B;
+    color: white;
+    padding: 10px;
+    clear: both;
+
+}
+
+h5 {
+
+    text-align: center;
+
+}
