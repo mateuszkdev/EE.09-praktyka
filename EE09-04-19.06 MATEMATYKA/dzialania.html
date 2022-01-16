@@ -1,0 +1,100 @@
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title> Działania matematycze </title>
+        <link rel="stylesheet" href="./styl.css">
+
+    </head>
+
+    <body>
+
+        <section id="baner1" class="baner">
+
+            <img src="./logo.jpg" alt="matematyka">
+
+        </section>
+
+        <section id="baner2">
+
+            <h1> Pomocnik Matematyczny </h1>
+
+        </section>
+
+        <section id="baner3" class="baner">
+
+            <a href="./dzialania.html"> <h4> Działania </h4> </a>
+
+        </section>
+
+        <section id="baner4" class="baner">
+
+            <a href="./mnozenie.html"> <h4> Tabliczka mnożenia </h4> </a>
+
+        </section>
+
+        <section id="lewy">
+
+            <h3> Proste działania </h3>
+
+            liczba A: <input type="number" id="a"> <br>
+            liczba B: <input type="number" id="b"> <br>
+
+            <button onclick="main('+')"> + </button>
+            <button onclick="main('-')"> - </button>
+            <button onclick="main('*')"> * </button>
+            <button onclick="main('/')"> / </button>
+            <button onclick="main('^')"> ^ </button>
+
+            <p id="wynik"></p>
+
+            <script type="text/javascript">
+
+                const main = (operator) => {
+
+                    const a = parseInt(document.getElementById('a').value);
+                    const b = parseInt(document.getElementById('b').value);
+
+                    let wynik = 0;
+
+                    switch(operator) {
+
+                        case '+': wynik = a + b; break;
+                        case '-': wynik = a - b; break;
+                        case '*': wynik = a * b; break;
+                        case '/': wynik = a / b; break;
+                        case '^': wynik = Math.pow(a, b); break;
+
+                    }
+
+                    document.getElementById('wynik').innerHTML = `Wynik: ${wynik}`;
+
+                }
+
+            </script>
+
+        </section>
+
+        <section id="prawy">
+
+            <ul>
+
+                <li> dodawanie </li>
+                <li> odejmowanie </li>
+                <li> dzielenie </li>
+                <li> potęgowanie </li>
+
+            </ul>
+
+        </section>
+
+        <footer>
+
+            <p> Autor: 00000000000 (Mateusz#4711) </p>
+
+        </footer>
+
+    </body>
+
+</html>
