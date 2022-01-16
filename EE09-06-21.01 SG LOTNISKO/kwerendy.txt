@@ -1,0 +1,4 @@
+Zapytanie 1: SELECT id, nr_rejsu, czas, kierunek, status_lotu FROM odloty ORDER BY czas DESC;
+Zapytanie 2: SELECT czas FROM odloty WHERE czas BETWEEN '10:10' AND '10:19' ORDER BY czas ASC;
+Zapytanie 3: SELECT nr_rejsu, linie FROM odloty, samoloty WHERE odloty.kierunek = 'Malta';
+Zapytanie 4: UPDATE przyloty SET status_lotu = 'planowany' WHERE nr_rejsu = 'LH9829';
