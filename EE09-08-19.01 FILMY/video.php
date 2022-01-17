@@ -112,9 +112,27 @@
 
                 <br>
 
-                Stronę wykonał: <a href="mailto:ja@poczta.com"> 00000000000 (Mateusz#4711) </a>
-
             </form>
+
+            <?php
+            
+                if (isset($_POST['numer'])) {
+
+                    $numer = $_POST['numer'];
+
+                    $query = "DELETE FROM produkty WHERE id = $numer;";
+
+                    $con = mysqli_connect('localhost', 'root', '', 'dane3');
+
+                    mysqli_query($con, $query);
+
+                    mysqli_close($con);
+
+                }
+            
+            ?>
+
+            Stronę wykonał: <a href="mailto:ja@poczta.com"> 00000000000 (Mateusz#4711) </a>
 
         </footer>
 
